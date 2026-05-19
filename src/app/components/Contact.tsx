@@ -45,15 +45,15 @@ const contactLinks = [
   {
     icon: <Linkedin className="w-5 h-5" />,
     label: "LinkedIn",
-    value: "linkedin.com/in/utsav-salokhe",
-    href: "https://linkedin.com/in/utsav-salokhe",
+    value: "linkedin.com/in/utsavsalokhe",
+    href: "https://www.linkedin.com/in/utsavsalokhe",
     color: "text-cyan-400",
   },
   {
     icon: <Github className="w-5 h-5" />,
     label: "GitHub",
-    value: "github.com/Utsav-git",
-    href: "https://github.com/Utsav-git",
+    value: "github.com/utsavsalokhe",
+    href: "https://github.com/utsavsalokhe",
     color: "text-violet-400",
   },
   {

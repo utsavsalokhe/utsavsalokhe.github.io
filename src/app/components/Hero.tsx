@@ -1,6 +1,13 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import { Github, Linkedin, Mail, Phone, ArrowDown, Sparkles } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Phone,
+  ArrowDown,
+  Sparkles,
+} from "lucide-react";
 
 const roles = [
   "Frontend Engineer",
@@ -64,7 +71,12 @@ export function Hero() {
       />
       <motion.div
         animate={{ y: [0, 20, 0], opacity: [0.2, 0.5, 0.2] }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        transition={{
+          duration: 7,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 1,
+        }}
         className="absolute bottom-32 right-[15%] w-72 h-72 rounded-full bg-violet-500/5 blur-3xl"
       />
 
@@ -136,19 +148,29 @@ export function Hero() {
         >
           <button
             onClick={() => {
-              document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
+              document
+                .querySelector("#projects")
+                ?.scrollIntoView({ behavior: "smooth" });
             }}
             className="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-violet-500 text-white hover:opacity-90 transition-opacity duration-200 shadow-lg shadow-cyan-500/20"
-            style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600 }}
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontWeight: 600,
+            }}
           >
             View My Work
           </button>
           <button
             onClick={() => {
-              document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+              document
+                .querySelector("#contact")
+                ?.scrollIntoView({ behavior: "smooth" });
             }}
             className="px-6 py-3 rounded-xl border border-slate-600 text-slate-300 hover:border-cyan-400/50 hover:text-white transition-all duration-200"
-            style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 500 }}
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontWeight: 500,
+            }}
           >
             Contact Me
           </button>
@@ -164,12 +186,12 @@ export function Hero() {
           {[
             {
               icon: <Github className="w-5 h-5" />,
-              href: "https://github.com/Utsav-git",
+              href: "https://github.com/utsavsalokhe",
               label: "GitHub",
             },
             {
               icon: <Linkedin className="w-5 h-5" />,
-              href: "https://linkedin.com/in/utsav-salokhe",
+              href: "https://linkedin.com/in/utsavsalokhe",
               label: "LinkedIn",
             },
             {
@@ -204,7 +226,10 @@ export function Hero() {
         transition={{ delay: 1.2 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-600"
       >
-        <span className="text-xs tracking-widest uppercase" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+        <span
+          className="text-xs tracking-widest uppercase"
+          style={{ fontFamily: "'JetBrains Mono', monospace" }}
+        >
           scroll
         </span>
         <motion.div

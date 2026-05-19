@@ -11,7 +11,10 @@ export function Footer() {
           </div>
           <span
             className="text-white"
-            style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600 }}
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontWeight: 600,
+            }}
           >
             Utsav Salokhe
           </span>
@@ -23,16 +26,25 @@ export function Footer() {
           style={{ fontFamily: "'Space Grotesk', sans-serif" }}
         >
           Built with{" "}
-          <Heart className="w-3.5 h-3.5 text-cyan-400 fill-cyan-400" />{" "}
-          using React & TypeScript
+          <Heart className="w-3.5 h-3.5 text-cyan-400 fill-cyan-400" /> using
+          React & TypeScript
         </p>
 
         {/* Social */}
         <div className="flex items-center gap-3">
           {[
-            { icon: <Github className="w-4 h-4" />, href: "https://github.com/Utsav-git" },
-            { icon: <Linkedin className="w-4 h-4" />, href: "https://linkedin.com/in/utsav-salokhe" },
-            { icon: <Mail className="w-4 h-4" />, href: "mailto:utsavsalokhe@gmail.com" },
+            {
+              icon: <Github className="w-4 h-4" />,
+              href: "https://github.com/utsavsalokhe",
+            },
+            {
+              icon: <Linkedin className="w-4 h-4" />,
+              href: "https://www.linkedin.com/in/utsavsalokhe",
+            },
+            {
+              icon: <Mail className="w-4 h-4" />,
+              href: "mailto:utsavsalokhe@gmail.com",
+            },
           ].map((item, i) => (
             <a
               key={i}
